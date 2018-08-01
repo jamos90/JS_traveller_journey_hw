@@ -33,10 +33,8 @@ Traveller.prototype.getUniqueModesOfTransport = function () {
   let uniqueArray = []
   let newArray = this.journeys.map(journey => journey.transport);
   for(let item of newArray){
-    newArray.push(item);
-    if {
-      newArray.include(item) === false
-      continue;
+    if (uniqueArray.includes(item) === false){
+    uniqueArray.push(item);
     }
   }
   return uniqueArray;
